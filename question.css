@@ -1,0 +1,381 @@
+body {
+    width: 100%;
+}
+
+/*login*/
+.loginbtn {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: -5s;
+}
+
+.loginbtn:hover {
+    background: #fff;
+    color: grey;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 100px;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+
+}
+
+/*predifined sizes*/
+.section-p1 {
+    padding: 40px 80px;
+}
+
+/*navigation bar*/
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    background-color: #8b9092;
+    box-shadow: 0 5px 15px rgba(58, 159, 216, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: white;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-img {
+    height: 90px;
+}
+
+/*home page*/
+#hero {
+    background-image: url(gietbg1.png);
+    height: 100vh;
+    width: 89%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4 {
+    font-size: 100px;
+    padding-bottom: 15px;
+}
+
+#hero button {
+    background-image: url("shopbutton.png");
+    background-color: transparent;
+    color: #eff3f1;
+    font-size: larger;
+    border: 0;
+    padding: 14px 80px 14px 60px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/*giet image section below the homepage pic*/
+#feature .entirephoto {
+    width: 420px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 0.01px solid #8888cd;
+    border-radius: 50px;
+    margin: 15px;
+}
+
+#feature .entirephoto:hover {
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+}
+
+/*calender page*/
+#page-header {
+    background-image: url("gietbg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15vh;
+    color: rgb(62, 59, 59);
+    text-align: center;
+    padding: 10px;
+}
+
+#pdf-link {
+    justify-content: center;
+    text-align: center;
+}
+
+#pdf-link button {
+    height: 100px;
+    background-color: rgb(42, 156, 194);
+    font-size: large;
+    border-radius: 100px;
+
+}
+
+#pdf-link a {
+    font-size: 25px;
+    color: white;
+}
+
+/*FIRST YEAR*/
+#pdf-link1 {
+    padding-top: 80px;
+}
+
+/*TEACHER'S DETAILS*/
+#page-header1 {
+    background-image: url("shopbutton.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15vh;
+    color: rgb(210, 205, 205);
+    text-align: center;
+    padding-top: 1px;
+    font-size: 30px;
+}
+
+/*TEACHER'S DETAILS*/
+@import url('https://fonts.googleapis.com//css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+#details {
+    background-image: url("calbackground.png");
+    background-size: cover;
+    height: 100%;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("calbackground.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+
+.card-list .card-item {
+    color: #fff;
+    width: 400px;
+    padding: 35px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(30px);
+}
+
+.card-list .card-item .user-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    padding: 4px;
+}
+
+.card-list .card-item .profession {
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.box {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+        0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.form-box {
+    width: 450px;
+    margin: 0px 10px;
+}
+
+.form-box header {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+
+..form-box form .field {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.form-box form .input input {
+    height: 10px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.btn {
+    height: 35px;
+    background: rgba(76, 68, 182, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.btn:hover {
+    opacity: 0.82;
+
+}
+
+.submit {
+    width: 100%;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width:840px) .main-box .top {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+}

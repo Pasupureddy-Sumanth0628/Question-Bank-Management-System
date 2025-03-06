@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=='X-UA-Compatible' content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>GIET QUESTION BANK</title>
+    <meta name="title" content="GIET QUESTION BANK">
+    <meta name="description" content="READ MORE AND MAKE SUCCESS THE RESULT OF PERFECTION!">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="question.css">
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        #doubt-section {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .doubt-output {
+            margin-top: 30px;
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .doubt-output p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="doubt-section">
+        <h2>SCHEDULE THE CLASS</h2>
+        <form id="doubtForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="URL">URL:</label>
+            <input type="URL" id="URL" name="URL" required>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="academic">Academic</option>
+                <option value="technical">Technical</option>
+            </select>
+
+            <label for="subject">Subject:</label>
+            <select id="category" name="category">
+                <option value="Engineering maths-1">Engineering maths-1</option>
+                <option value="Engineering maths-2">Engineering maths-2</option>
+                <option value="Engineering maths-3">Engineering maths-3</option>
+                <option value="DM">Discrete Mathematics</option>
+                <option value="EME">EME</option>
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="DSA">DSA</option>
+                <option value="PPS">PPS</option>
+                <option value="IDS">Introduction to datascience</option>
+                <option value="DBMS">DBMS</option>
+                <option value="OOPS">OOPS USING JAVA</option>
+                <option value="DE">Digital Electronics</option>
+                <option value="CESS">CESS</option>
+                <option value="BEE">BEE</option>
+            </select>
+            <label for="doubt">TOPICS TO BE DISCUSSED:</label>
+            <textarea id="doubt" name="doubt" rows="5" required></textarea>
+
+            <button type="submit">POST</button>
+        </form>
+        <!-- Output Section -->
+        <div class="doubt-output" id="doubtOutput" style="display: none;">
+            <h3>Your Submitted Doubt:</h3>
+            <p><strong>Name:</strong> <span id="outputName"></span></p>
+            <p><strong>URL:</strong> <span id="outputEmail"></span></p>
+            <p><strong>Category:</strong> <span id="outputCategory"></span></p>
+            <p><strong>Subject:</strong> <span id="outputSubject"></span></p>
+            <p><strong>TOPICS:</strong> <span id="outputDoubt"></span></p>
+        </div>
+    </section>
+    <script>
+        // Handle the form submission
+        document.getElementById('doubtForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form from refreshing the page
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('URL').value;
+            const category = document.getElementById('category').value;
+            const subject = document.getElementById('subject').value;
+            const doubt = document.getElementById('doubt').value;
+
+            // Display the output
+            document.getElementById('outputName').innerText = name;
+            document.getElementById('outputURL').innerText = URL;
+            document.getElementById('outputCategory').innerText = category;
+            document.getElementById('outputSubject').innerText = subject;
+            document.getElementById('outputDoubt').innerText = doubt;
+
+            // Show the doubt output section
+            document.getElementById('doubtOutput').style.display = 'block';
+
+            // Clear form fields after submission
+            document.getElementById('doubtForm').reset();
+        });
+    </script>
+</body>

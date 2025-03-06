@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIET QUESTION BANK</title>
+    <meta name="title" content="GIET QUESTION BANK">
+    <meta name="description" content="READ MORE AND MAKE SUCCESS THE RESULT OF PERFECTION!">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="question.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #link {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+        }
+
+        #link button {
+            background-color: black;
+            color: azure;
+            border-radius: 8px;
+            height: 30px;
+            width: 300px;
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #hero {
+            display: none;
+            /* Initially hidden */
+            text-align: center;
+            padding: 50px;
+        }
+
+        #hero a {
+            font-size: 34px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-box {
+            background-color: #f0f0f0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            #hero h4 {
+                font-size: 18px;
+            }
+
+            #link button {
+                width: 200px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="logo2.png" style="height: 110px; width: auto;" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html"><i class="fa-solid fa-house"></i>HOME</a></li>
+                <li><a href="cal.html"><i class="fa-regular fa-calendar-days">Calender</i></a></li>
+                <li><a href="syl.html">SYLLABUS</a></li>
+                <li><a href="q.html"><i class="fa-solid fa-file-circle-question"></i>QUESTION BANK</a></li>
+                <li><a href="teacher.html"><i class="fa-solid fa-chalkboard-user"></i>Teacher's details</a></li>
+                <li><a href="query.html"><i class="fa-solid fa-question"></i>Query</a></li>
+                <button class="loginbtn">Login</button>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hero">
+        <h4>ALL THE BEST</h4>
+        <button><a href="syl.html">Let's Seek!</a></button>
+    </section>
+
+    <section id="link" class="section-p1">
+        <div>
+            <a href="https://www.giet.edu/" target="_blank">
+                <button
+                    style="background-color: black; color: azure; border-radius: 8px; height: 50px; width: 200px; font-size: 18px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">GIET
+                    MAIN WEB</button>
+            </a>
+        </div>
+        <div class="container">
+            <div class="box form-box">
+                <header>Sign up</header>
+                <form action="" method="post">
+                    <div class="field input">
+                        <label for="Contact">Contact</label>
+                        <input type="text" name="Contact" id="Contact" autocomplete="off" required>
+                    </div>
+                    <div class="field input">
+                        <label for="Email">Official-Email</label>
+                        <input type="text" name="Email" id="Email" autocomplete="off" required>
+                    </div>
+                    <div class="field input">
+                        <input type="submit" name="submit" id="submit" required>
+                    </div>
+                    <div class="links">
+                        Already have an account?<a href="index.html">Sign Up</a> </div>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>
